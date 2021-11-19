@@ -15,6 +15,8 @@ second fonts color: #757575;
   --second-fonts-color: #757575;
   --active-element-color: #2196f3;
   --order-service-color: #188ce8;
+  --soc-inactive: #afb1b8;
+  --soc-active: #ffffff;
 }
 /*Body*/
 
@@ -129,12 +131,22 @@ body {
 /*Contacts*/
 
 .contacts-link {
+  display: flex;
+  align-items: center;
   font-style: normal;
-  color: var(--second-fonts-color);
   font-weight: 400;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
+  color: var(--second-fonts-color);
+}
+
+.contacts .smartphone,
+.contacts .envelope {
+  padding: 0;
+  margin-right: 10px;
+  fill: currentColor;
 }
 
 /*---------------Section hero-------------*/
@@ -151,30 +163,34 @@ body {
 }
 
 .hero {
-  background-color: var(--hero-color);
-  color: var(--basic-color);
-  text-align: center;
-  padding: 200px 0;
-
+  max-width: 1600px;
+  height: 600px;
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
     url('../images/hero_img.jpg');
-  background-position: center;
+  margin-right: auto;
+  margin-left: auto;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+
+  background-color: var(--hero-color);
+  color: var(--basic-color);
+  text-align: center;
+  padding: 200px 0;
 }
 
 .order-service {
   padding: 10px 32px;
-
   cursor: pointer;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   font-family: inherit;
+
   border: none;
   border-radius: 4px;
   background-color: var(--active-element-color);
@@ -222,6 +238,20 @@ body {
 
 .tips-item:nth-child(4n) {
   margin-right: 0;
+}
+
+.tips-thumb {
+  display: flex;
+  background-color: var(--inactive-button-color);
+  border-radius: 4px;
+  margin-bottom: 30px;
+  padding: 25px 100px;
+  align-items: center;
+}
+
+.tips-svg {
+  width: 70px;
+  height: 70px;
 }
 
 /*---------------Section make-------------*/
@@ -292,7 +322,7 @@ body {
 }
 
 .team-position {
-  margin: 0;
+  margin: 0 0 16px;
   text-align: center;
   font-size: 16px;
   line-height: 1.18;
@@ -311,13 +341,36 @@ body {
   border-radius: 0px 0px 4px 4px;
 }
 
-.tips-item:nth-child(4n) {
-  margin-right: 0;
-}
-
 .team-content {
   padding-top: 30px;
   padding-bottom: 30px;
+}
+
+.team-soc {
+  display: flex;
+  margin: 0 32px;
+}
+
+.soc-item {
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+  margin: 0;
+  border-radius: 50%;
+}
+
+.soc-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.soc-item:hover {
+  background-color: var(--active-element-color);
+}
+
+.team-svg {
+  width: 20px;
+  height: 20px;
+  fill: var(--soc-inactive);
 }
 
 /*---------------Section footer-------------*/
