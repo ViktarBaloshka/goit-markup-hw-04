@@ -323,11 +323,11 @@ body {
 
 .team-position {
   margin: 0 0 16px;
+
   text-align: center;
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
-
   color: var(--second-fonts-color);
 }
 
@@ -348,28 +348,63 @@ body {
 
 .team-soc {
   display: flex;
-  margin: 0 32px;
+  justify-content: center;
 }
 
-.soc-item {
+.soc-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   width: 44px;
   height: 44px;
-  padding: 12px;
-  margin: 0;
   border-radius: 50%;
+  color: var(--soc-inactive);
 }
 
-.soc-item:not(:last-child) {
-  margin-right: 10px;
-}
-
-.soc-item:hover {
-  background-color: var(--active-element-color);
-}
-
-.team-svg {
+.soc-link .soc-svg {
   width: 20px;
   height: 20px;
+  fill: currentColor;
+}
+
+.soc-item .soc-link:hover {
+  background-color: var(--active-element-color);
+  color: var(--basic-color);
+}
+/*---------------Section clients-------------*/
+
+.clients-header {
+  margin-top: 0;
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.clients-list {
+  display: flex;
+  justify-content: center;
+}
+
+.clients-item {
+  width: 170px;
+  height: 92px;
+
+  border: 1px solid var(--soc-inactive);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.clients-link {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.clients-link .clients-svg {
   fill: var(--soc-inactive);
 }
 
