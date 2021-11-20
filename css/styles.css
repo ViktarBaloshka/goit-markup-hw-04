@@ -124,7 +124,11 @@ body {
 .nav-link:focus,
 .contacts-link:hover,
 .contacts-link:focus,
-.current {
+.current,
+.clients-link:hover,
+.clients-link:focus,
+.footer .contacts-link:hover,
+.footer .contacts-link:focus {
   color: var(--active-element-color);
 }
 
@@ -344,7 +348,7 @@ body {
   padding-bottom: 30px;
 }
 
-.team-soc {
+.soc {
   display: flex;
   justify-content: center;
 }
@@ -366,7 +370,8 @@ body {
   fill: currentColor;
 }
 
-.soc-item .soc-link:hover {
+.soc-item .soc-link:hover,
+.soc-item .soc-link:focus {
   background-color: var(--active-element-color);
   color: var(--basic-color);
 }
@@ -399,30 +404,30 @@ body {
   width: 170px;
   height: 92px;
   border: 1px solid var(--soc-inactive);
+  fill: var(--soc-inactive);
   border-radius: 4px;
-  color: var(--soc-inactive);
-}
-
-.clients-link:hover {
-  color: rebeccapurple;
 }
 
 .clients-link .clients-svg {
   width: 106px;
   height: 60px;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  border-color: var(--active-element-color);
   fill: currentColor;
 }
 
 /*---------------Section footer-------------*/
 .footer {
+  display: flex;
   padding: 60px 0;
   background-color: var(--hero-color);
 }
 
 .address .address-text {
-  margin-top: 20px;
-  margin-bottom: 0;
-
+  margin: 20px 0 0;
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -436,6 +441,39 @@ body {
 
 .footer-item {
   margin-top: 9px;
+}
+
+.footer-soc-text {
+  display: flex;
+  margin: 0 0 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--basic-color);
+}
+
+.soc > .soc-item {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.soc > .soc-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer-nav {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-contact {
+  margin-right: 70px;
+}
+
+.footer .contacts-link {
+  color: rgba(255, 255, 255, 0.6);
 }
 
 /********************************Portfolio page*********************************/
@@ -475,6 +513,15 @@ body {
 
 .filter-item:not(:last-child) {
   margin-right: 8px;
+}
+
+.example-item:hover {
+  width: calc((100% - 60px) / 3);
+  left: 215px;
+  top: 262px;
+
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .example-list {
