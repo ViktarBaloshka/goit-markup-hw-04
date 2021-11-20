@@ -142,8 +142,8 @@ body {
   color: var(--second-fonts-color);
 }
 
-.contacts .smartphone,
-.contacts .envelope {
+.nav-items .smartphone,
+.nav-items .envelope {
   padding: 0;
   margin-right: 10px;
   fill: currentColor;
