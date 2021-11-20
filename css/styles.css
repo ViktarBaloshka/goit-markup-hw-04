@@ -8,15 +8,13 @@ second fonts color: #757575;
 */
 :root {
   --basic-color: #ffffff;
-  --second-background-color: #f5f4fa;
-  --inactive-button-color: #f5f4fa;
+  --second-color: #f5f4fa;
   --hero-color: #2f303a;
   --first-fonts-color: #212121;
   --second-fonts-color: #757575;
   --active-element-color: #2196f3;
   --order-service-color: #188ce8;
   --soc-inactive: #afb1b8;
-  --soc-active: #ffffff;
 }
 /*Body*/
 
@@ -126,12 +124,10 @@ body {
 .contacts-link:focus,
 .current,
 .clients-link:hover,
-.clients-link:focus,
 .footer .contacts-link:hover,
 .footer .contacts-link:focus {
   color: var(--active-element-color);
 }
-
 /*Contacts*/
 
 .contacts-link {
@@ -245,7 +241,7 @@ body {
 
 .tips-thumb {
   display: flex;
-  background-color: var(--inactive-button-color);
+  background-color: var(--second-color);
   border-radius: 4px;
   margin-bottom: 30px;
   padding: 25px 100px;
@@ -287,7 +283,7 @@ body {
 
 /*---------------Section team-------------*/
 .section-team {
-  background-color: var(--second-background-color);
+  background-color: var(--second-color);
 }
 
 .team {
