@@ -129,6 +129,7 @@ body {
 .footer .contacts-link:focus {
   color: var(--active-element-color);
 }
+
 /*Contacts*/
 
 .contacts-link {
@@ -143,8 +144,8 @@ body {
   color: var(--second-fonts-color);
 }
 
-.nav-items .smartphone,
-.nav-items .envelope {
+.contacts-link .smartphone,
+.contacts-link .envelope {
   padding: 0;
   margin-right: 10px;
   fill: currentColor;
@@ -361,14 +362,23 @@ body {
   color: var(--soc-inactive);
 }
 
-.soc-link .soc-svg {
+.soc-item {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.soc-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.soc-svg {
   width: 20px;
   height: 20px;
   fill: currentColor;
 }
 
-.soc-item .soc-link:hover,
-.soc-item .soc-link:focus {
+.soc-link:hover,
+.soc-link:focus {
   background-color: var(--active-element-color);
   color: var(--basic-color);
 }
@@ -423,8 +433,12 @@ body {
   background-color: var(--hero-color);
 }
 
+/* .footer .address {
+  margin-top: 20px;
+} */
+
 .address .address-text {
-  margin: 20px 0 0;
+  margin: 0 0 9px;
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -433,11 +447,13 @@ body {
 }
 
 .footer .logo {
+  display: block;
+  margin-bottom: 20px;
   color: var(--basic-color);
 }
 
 .footer-item {
-  margin-top: 9px;
+  margin-bottom: 9px;
 }
 
 .footer-soc-text {
@@ -451,13 +467,8 @@ body {
   color: var(--basic-color);
 }
 
-.soc > .soc-item {
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
-}
-
-.soc > .soc-item:not(:last-child) {
-  margin-right: 10px;
+.footer .soc-svg {
+  color: var(--basic-color);
 }
 
 .footer-nav {
@@ -512,7 +523,8 @@ body {
   margin-right: 8px;
 }
 
-.example-item:hover {
+.example-item:hover,
+.example-item:focus {
   width: calc((100% - 60px) / 3);
   left: 215px;
   top: 262px;
