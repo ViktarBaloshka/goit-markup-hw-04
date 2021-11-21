@@ -124,6 +124,7 @@ body {
 .contacts-link:focus,
 .current,
 .clients-link:hover,
+.clients-link:focus,
 .footer .contacts-link:hover,
 .footer .contacts-link:focus {
   color: var(--active-element-color);
