@@ -527,8 +527,8 @@ body {
   margin-right: 8px;
 }
 
-.example-card:hover,
-.example-card:focus {
+.example-link:hover,
+.example-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -537,6 +537,10 @@ body {
   display: flex;
   flex-wrap: wrap;
   padding: 0;
+}
+
+.example-link {
+  display: block;
 }
 
 .example-header {
@@ -572,7 +576,7 @@ body {
   margin-right: 0;
 }
 
-.example-card .example-content {
+.example-item .example-content {
   padding: 20px 24px;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
